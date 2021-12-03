@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <title>Serinity - Booking</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./confirmation.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+</head>
+
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="./index.html"><img src="../assets/logo.png" alt="" width="150px" height="150px"></a>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item" id="co-working">
+                        <a class="nav-link active" aria-current="page" href="../html/working-space.html">Co-working space</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../html/offers.html">Offers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="./story.html">Our Story</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="../html/contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<body>
+    <div style="height: 100px; text-align: center; margin-left: 50px; margin-right: 50px;">
+        <div class="row" style="margin-top: 30px;">
+            <h3 class="col">Main page</h3>
+            <h3 class="col">Order details</h3>
+            <h3 class="col">Payment</h3>
+        </div>
+        <hr style="color: #DBC096; opacity: 1; height: 2px;">
+        <hr style="color: #77721F; height: 3px; opacity: 1; position: relative; bottom: 20px; margin-right: 600px; margin-left: 600px;">
+    </div>
+    <div class="container form">
+        <form class="row">
+            <select class="col">
+                <option selected>Select location</option>
+                <option>Paris</option>
+                <option>London</option>
+                <option>Barcelona</option>
+                <option>Berlin</option>
+            </select>
+            <input class="col" type="date" id="start" name="trip-start" value="2021-12-03" min="2021-12-03"
+                max="2023-01-01">
+            <select class="col">
+                <option selected>Number of guest</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+                <option>8</option>
+            </select>
+            <input type="button" class="col" id="book" onclick="location.href='../html/hotel.html'" value="Book now"/>
+        </form>
+    </div>
+    <div style="height: 700px; margin-top: 30px;">
+        <div class="row">
+            <div class="col-6" style="text-align: center;">
+                <img src="../assets/superiorroom.png" style="padding-bottom: 20px;">
+                <div style="margin-left: 20%; margin-right: 230px; text-align: left;">
+                    <ul>
+                        <li>
+                            <span style="display: inline-block; width: 200px; font-weight: bold;">BOOKING DETAILS</span>
+                        </li>
+                        <li>
+                            <span style="display: inline-block; width: 200px;">WHERE:</span>
+                            Serenity Boutique Hotel PARIS
+                        </li>
+                        <li>
+                            <span style="display: inline-block; width: 200px;">ROOM TYPE:</span>
+                            Superior Room
+                        </li>
+                        <li>
+                            <span style="display: inline-block; width: 200px;">FROM:</span>
+                            30 Oct. 2021
+                        </li>
+                        <li>
+                            <span style="display: inline-block; width: 200px;">TO:</span>
+                            Wed, 6 Oct, 2021
+                        </li>
+                        <li>
+                            <span style="display: inline-block; width: 200px;">NIGHTS:</span>
+                            2
+                        </li>
+                        <li>
+                            <span style="display: inline-block; width: 200px;">GUESTS:</span>
+                            2 Adults
+                        </li>
+                        <hr>
+                        <li style="font-weight: bold;">
+                            <span style="display: inline-block; width: 200px;">TOTAL:</span>
+                            €270.00
+                        </li>
+                        <li>
+                            <span style="display: inline-block; width: 200px;">City tax:</span>
+                            €20.00
+                        </li>
+                        <li>
+                            <span style="display: inline-block; width: 200px;">VAT:</span>
+                            €75.00
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-6" style="text-align: center; padding-right: 130px;">
+                <h4 style="padding-top: 20px; padding-bottom: 20px;">Superior Room</h4>
+                <p style="padding-top: 10px; padding-bottom: 20px; margin-left: 80px; margin-right: 80px;">Delight in a spacious bedroom with king bed, two fantastic bathrooms and a separate living area. Admire the apartment’s beautifully curated selection of art. Then take in the views across the city’s historical centre.</p>
+                <h4 style="padding-bottom: 20px;">Room facilites</h4>
+                <ul>
+                    <li>hypo-allergenic Hilding bed</li>
+                    <li>safety deposit box</li>
+                    <li>fridge full of organic healthy snacks</li>
+                    <li>louge zone & desk</li>
+                    <li>air conditioning </li>
+                    <li>40-inch LED smart TV</li>
+                    <li>free national and international calls </li>
+                    <li>daily complimentary mineral water,</li>
+                    <li>organic coffee & tea</li>
+                </ul>
+                <p style="color: #77721F;">BREAKFAST INCLUDED</p>
+                <button style="width: 225px; height: 65px; color: white; background: #DBC096; border: none;" onclick="location.href='../html/payment.html'">Continue</button>
+            </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<footer>
+    <div class="footer-clean">
+        <footer>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-sm-4 col-md-3 item">
+                        <h5>Serinity Boutique Hotel</h5>
+                        <ul>
+                            <li><a href="../html/story.html">Our Story</a></li>
+                            <li><a href="../html/offers.html">Offers</a></li>
+                            <li><a href="../html/working-space.html">Co-working</a></li>
+                            <li><a href="../html/contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-4 col-md-3 item">
+                        <h5>Regulations</h5>
+                        <ul>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Cookie Policy</a></li>
+                            <li><a href="#">Term of use</a></li>
+                            <li><a href="#">Booking regulation</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 item social">
+                        <a href="#"><i class="icon ion-social-facebook"></i></a>
+                        <a href="#"><i class="icon ion-social-twitter"></i></a>
+                        <a href="#"><i class="icon ion-social-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+</footer>
+
+</html>
